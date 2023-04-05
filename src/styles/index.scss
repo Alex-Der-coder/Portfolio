@@ -1,0 +1,22 @@
+@import './variables';
+@import './mixins';
+@import './Navbar';
+@import './WhoIAm';
+@import './Projects';
+@import './Contact';
+@import './Footer';
+
+
+
+body{
+    font-family: 'Raleway', sans-serif;
+    .sectionTitle {
+        font-size: 26px;
+        color: $millbrook;
+        h2 {
+
+          font-weight: 400;
+        }
+      }
+}
+

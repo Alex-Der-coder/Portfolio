@@ -1,0 +1,60 @@
+.projectsSection {
+ 
+  .projectList {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    .projectGitLink {
+      text-decoration: none;
+    }
+    .project {
+      display: flex;
+      z-index: 5;
+      flex-direction: column;
+      justify-content: space-between;
+      margin: 10px 40px;
+      border: 1px solid #dedede;
+      border-radius: 10px;
+      box-shadow: 3px 5px 5px #36323261;
+      width: 250px;
+      height: 260px;
+      transition-duration: 300ms;
+      cursor: pointer;
+      &:hover {
+        transform: scale(1.1);
+      }
+      @include tabAndLess{
+        margin: 10px 30px;
+      }
+      .projectImg {
+        object-fit: cover;
+        border-bottom: 1px solid #dedede;
+      }
+
+      .projectTitle {
+        border-radius: 10px 10px 0px 0px;
+        margin: 0px;
+        padding: 4px;
+        color: #fff;
+        background-color: $millbrook;
+      }
+      .projectDescription {
+        padding: 2px;
+        font-size: 14px;
+        color: $millbrook;
+        height: 50px;
+      }
+
+      .projectTechno {
+        display: flex;
+        justify-content: center;
+        padding: 4px;
+        .technos {
+          width: 20px;
+          margin: 0px 4px;
+        }
+      }
+    }
+  }
+}

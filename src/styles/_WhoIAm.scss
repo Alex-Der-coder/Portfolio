@@ -1,0 +1,80 @@
+.whoIAm {
+  padding-top: 80px;
+
+
+  .presentationContainer {
+    padding: 20px 0px;
+    display: flex;
+    @include tabAndLess{
+      flex-direction: column;
+    }
+    .picSection {
+      .profilePic {
+        width: 330px;
+        padding: 0px 40px;
+        @include smartphoneOnly{
+          width: 200px;
+        }
+      }
+    }
+    .presentation {
+      padding: 0px 20px;
+      .presentationP {
+        text-align: start;
+        color: $millbrook;
+        font-weight: 500;
+        @include tabAndLess{
+          text-align: center;
+        }
+        @include tabOnly{
+          font-size: 20px;
+        }
+        @include smartphoneOnly{
+          font-size: 14px;
+        }
+      }
+      .downloadCVButton {
+        display: flex;
+        justify-content: center;
+
+        .downloadCVLink {
+          margin: 14%;
+          text-decoration: none;
+          font-size: 16px;
+          background-color: $millbrook;
+          color: #fff;
+          padding: 15px 40px;
+          border-style: none;
+          border-radius: 15px;
+          font-family: "Raleway";
+          transition-duration: 300ms;
+          cursor: pointer;
+          @include tabAndLess{
+            margin: 50px;
+          }
+          &:hover {
+            color: $millbrook;
+            background-color: $carouselPink;
+            font-weight: 700;
+            scale: 1.1;
+          }
+         
+        }
+      }
+    }
+  }
+  .mediaIcons {
+    display: flex;
+    margin: 50px 120px;
+    .icons {
+      margin-left: 20px;
+      color: $millbrook;
+      font-size: 26px;
+      cursor: pointer;
+      transition-duration: 150ms;
+      &:hover {
+        scale: 1.3;
+      }
+    }
+  }
+}
