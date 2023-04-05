@@ -1,32 +1,33 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.f39880db.css",
-    "main.js": "/Portfolio/static/js/main.fd7c9e8f.js",
+    "main.js": "/Portfolio/static/js/main.97a977e8.js",
     "static/js/787.1ed0c42c.chunk.js": "/Portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/profilePic.png": "/Portfolio/static/media/profilePic.9ab364da522f24fa7c1b.png",
     "static/media/cv.pdf": "/Portfolio/static/media/cv.771b26945457f5c0e252.pdf",
     "static/media/typewritter.png": "/Portfolio/static/media/typewritter.56aed8e189bf1f55c796.png",
-    "static/media/hottakes.png": "/Portfolio/static/media/hottakes.f66c1717bc612c237f19.png",
-    "static/media/lapanthere.png": "/Portfolio/static/media/lapanthere.4e192164beb8e8b3c580.png",
     "static/media/react.png": "/Portfolio/static/media/react.07d9e407d4e491c548d5.png",
     "static/media/sass.png": "/Portfolio/static/media/sass.c5da83bb9ff45b84e0e7.png",
     "static/media/nodejs.png": "/Portfolio/static/media/nodejs.007e99f68b718e476aba.png",
-    "static/media/lmj.png": "/Portfolio/static/media/lmj.db555c0ab631266fc636.png",
-    "static/media/groupomania.png": "/Portfolio/static/media/groupomania.49161035a656df8ad720.png",
+    "static/media/hottakes.webp": "/Portfolio/static/media/hottakes.9cf583ac9aa5edd4f878.webp",
+    "static/media/lapanthere.webp": "/Portfolio/static/media/lapanthere.ab04d39b2bdfd3bbd49e.webp",
     "static/media/mongodb.png": "/Portfolio/static/media/mongodb.25e861b553bfa699bbda.png",
     "static/media/mysql.png": "/Portfolio/static/media/mysql.7d8d571e5629923eaf74.png",
-    "static/media/kanap.png": "/Portfolio/static/media/kanap.b93dbbebe7a100644678.png",
+    "static/media/lmj.webp": "/Portfolio/static/media/lmj.1effc19c6b02313d3776.webp",
     "static/media/booki.png": "/Portfolio/static/media/booki.38c755061127b03b91d3.png",
+    "static/media/groupomania.webp": "/Portfolio/static/media/groupomania.3071d6a863ebdef4d95e.webp",
+    "static/media/kanap.webp": "/Portfolio/static/media/kanap.ee946a90af61ae530e24.webp",
     "static/media/html.png": "/Portfolio/static/media/html.cfb2ba4a6b1c3de295bc.png",
     "static/media/css.png": "/Portfolio/static/media/css.4a6549b8c2b4cda8bb88.png",
     "static/media/js.png": "/Portfolio/static/media/js.3dfb665e058d08c99f28.png",
+    "static/media/ohmyfood.webp": "/Portfolio/static/media/ohmyfood.47d16602c8b13166b6dc.webp",
     "index.html": "/Portfolio/index.html",
     "main.f39880db.css.map": "/Portfolio/static/css/main.f39880db.css.map",
-    "main.fd7c9e8f.js.map": "/Portfolio/static/js/main.fd7c9e8f.js.map",
+    "main.97a977e8.js.map": "/Portfolio/static/js/main.97a977e8.js.map",
     "787.1ed0c42c.chunk.js.map": "/Portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f39880db.css",
-    "static/js/main.fd7c9e8f.js"
+    "static/js/main.97a977e8.js"
   ]
 }
