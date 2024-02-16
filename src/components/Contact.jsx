@@ -17,24 +17,24 @@ const Contact = () => {
     });
   }, []);
   return (
-    <section className="contactSection" id="contactSection" ref={sectionRef}>
-      <div className="sectionTitle">
+    <section className="contactSection" id="contactSection" ref={sectionRef} >
+      <div className="sectionTitle" >
         <h2>Contact</h2>
       </div>
-      <div className="contactContainer">
-        <a href="https://www.linkedin.com/in/alexandre-de-roeck-%F0%9F%9A%80-660217135/">
-          <div className="contactIcons">
-            <FontAwesomeIcon icon={faLinkedin} className="icons" aria-label="lien linkedin"/>
+      <div className="contactContainer"  > 
+        <a href="https://www.linkedin.com/in/alexandre-de-roeck-%F0%9F%9A%80-660217135/" aria-label="lien linkedin" tabIndex={1}>
+          <div className="contactIcons " tabIndex={1}>
+            <FontAwesomeIcon icon={faLinkedin} className="icons" />
           </div>
         </a>
-        <a href="https://github.com/Alex-Der-coder">
-          <div className="contactIcons" aria-label="lien github">
+        <a href="https://github.com/Alex-Der-coder" aria-label="lien github" >
+          <div className="contactIcons"  tabIndex={1}>
             <FontAwesomeIcon icon={faGithub} className="icons" />
           </div>
         </a>
-        <a href="mailto: Mr.alexandre.deroeck@gmail.com">
-          <div className="contactIcons">
-            <FontAwesomeIcon icon={faEnvelope} className="icons" aria-label="M'envoyer un mail"/>
+        <a href="mailto: Mr.alexandre.deroeck@gmail.com" aria-label="M'envoyer un mail" >
+          <div className="contactIcons" tabIndex={1}>
+            <FontAwesomeIcon icon={faEnvelope} className="icons" />
           </div>
         </a>
       </div>

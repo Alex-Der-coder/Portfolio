@@ -1,0 +1,125 @@
+
+.collapse-header {
+  position: relative;
+  height: 47px;
+  background: $millbrook;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  font-weight: bold;
+  cursor: pointer;
+  padding-left: 15px;
+  color: #ffffff;
+  
+  .chevron {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    border-style: solid;
+    border-width: 0.25em 0.25em 0 0;
+    content: '';
+    display: inline-block;
+    height: 0.45em;
+    width: 0.45em;
+    transition: transform 0.2s ease;
+    &.open:before {
+      transform: translate(-50%, -50%) rotate(45deg);
+    }
+  }
+  
+  &.open .chevron {
+    transform: translateY(-50%) rotate(135deg);
+  }
+}
+
+.collapse-content {
+  background: #f6f6f6;
+  overflow: hidden;
+  transition: height 0.3s ease;
+  
+  &.collapsed {
+    height: 0;
+    
+  }
+  
+  &.expanded {
+    height: 325px;
+    text-align: center;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 142.6%;
+    color: #EE82EE;
+    
+    p {
+      text-align: justify;
+      margin-left: 3%;
+      margin-right: 3%;
+      width: 89%;
+    }
+  }
+}
+
+.content {
+  width: 88%;
+  height: 47px;
+  left: 9%;
+  top: 30%;
+}
+
+.App > div:nth-child(2) {
+  height: 75rem;
+ }
+ 
+.chevron.open:before {
+  transform: rotate(135deg);
+}
+
+.chevron {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  border-style: solid;
+  border-width: 0.25em 0.25em 0 0;
+  content: '';
+  display: inline-block;
+  height: 0.45em;
+  width: 0.45em;
+  vertical-align: top;
+}
+
+
+.chevron.open:before {
+  transform: rotate(135deg);
+}
+
+.collapse-header .chevron {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  border-style: solid;
+  border-width: 0.25em 0.25em 0 0;
+  content: "";
+  display: inline-block;
+  height: 0.45em;
+  width: 0.45em;
+  transition: transform 0.2s ease;
+}
+
+.collapse-header .chevron {
+  transform: translateY(-50%) rotate(315deg);
+}
+
+.collapse-container {
+  margin-top: 3%;
+  width: 61%;
+  margin-left: 33%;
+}
+
+
+
+.body_logement_detail {
+  height: 60rem;
+}

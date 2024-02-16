@@ -1,10 +1,38 @@
-.footerContainer{
-    bottom: 0;
-    background-color: $millbrook;
-    padding: 10px 30px;
-    color: #fff;
-    font-size: 10px;
-    margin-top: 30px;
-    display: flex;
-    justify-content: flex-end;
+
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: #fff;
+  background-color: black;
+  margin-left: -1%;
+  padding-left: 2%;
+  margin-bottom: -1%;
+  margin-right: -0.5%;
+  li  a{
+  list-style: none; 
+  color: #fff;
+  text-decoration: none;
+  }
+}
+
+.col-row {
+padding : 2rem;
+  ul  {
+  padding-right:unset;
+}
+  li {
+  padding-bottom: 0.55rem;
+  }
+}
+
+.container_link  {
+display :flex ; 
+}
+
+.text_gradient  {
+background: linear-gradient(to right, #FCB045 0%, #CF1512 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
 }

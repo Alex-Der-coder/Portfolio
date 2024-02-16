@@ -6,19 +6,20 @@
     align-items:center; 
     
     a {
-        width: 80%;
-        
+      width: 80%;
+      
       .contactIcons {
         padding: 30px 0px;
         margin: 1% 0%;
         border-radius: 25px;
         color: #fff;
         font-size: 50px;
-        background-color: $millbrook;
+        background: $millbrook;
         transition-duration: 300ms;
         &:hover {
-          background-color: $carouselPink;
-          color: $millbrook;
+          background: black;
+          color: white;
+          
         }
       }
     }

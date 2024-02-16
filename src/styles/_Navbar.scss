@@ -1,124 +1,131 @@
 @import "./variables";
 @import "./mixins";
 
-.navbar {
-  z-index: 10;
-  width: 100%;
-  position: fixed;
-  top: 0;
-  background-color: $millbrook;
-  height: 60px;
+ul{
+	margin:0;
+	padding: 0;
+	list-style: none;
+  padding-right: 40%;
+}
+
+
+#menu > li{
+	width:150px;
+	height:40px;
+	float:left;
+	text-align: center;
+	line-height: 40px;
+  cursor:pointer;
+  background: black;
+}
+
+#menu li ul a{
+	display: block;
+	width:150px;
+	height:40px;
+	background: black;
+	text-decoration: none;
+	color:white;
+}
+
+#menu li ul {
+	height: 0;
+	overflow: hidden;
+	transition:1s all;
+}
+ 
+#menu  li a {
+list-style: none;
   color: #fff;
-  border: 1px solid black;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  .madisonKramerDev {
-    justify-content: flex-start;
-    padding-left: 20px;
-    .name {
-      position: relative;
-      top: 8px;
-      font-family: "Manrope", sans-serif;
-      font-size: 20px;
-    }
-    .dev {
-      color: $carouselPink;
-      font-size: 14px;
-      position: relative;
-      bottom: 16px;
-    }
-  }
-  .anchorLinks {
-    justify-content: flex-end;
-    font-size: 18px;
-    font-weight: 500;
-
-    @include tabAndLess {
-      display: none;
-      
-    }
-    &--open{
-      
-      display:block;
-      height: 200px;
-    }
-    &__list {
-      display: flex;
-      position: relative;
-      height: 100%;
-      margin-right: 34px;
-      
-      
-      @include tabAndLess{
-        flex-direction: column;
-        background-color: $millbrook;
-        top: 63px;
-        width: 100%;
-        padding: 0;
-
-      }
-      li {
-        list-style-type: none;
-        width: 130px;
-        transition-duration: 250ms;
-        height: 100%;
-        cursor: pointer;
-        @include tabAndLess{
-          height: 50px;
-          width: 100%;
-          border-bottom: 1px solid #fff;
-          line-height: 50px;
-          
-          &:nth-child(1){
-            border-top: 1px solid #fff;
-            margin-top: 50px;
-          }
-        }
-        &:hover {
-          transform: scale(1.15);
-        }
-        .anchorLink {
-          
-          text-decoration: none;
-          &:any-link{
-            color: #fff;
-          }
-          &:visited {
-            color: #fff;
-          }
-          &:hover {
-            color: $carouselPink;
-          }
-        }
-      }
-    }
-  }
-  .responsiveIcon {
-    display: none;
-    padding: 30px;
-    font-size: 26px;
-    @include tabAndLess {
-      display: inline;
-      position: absolute;
-      right: 10px;
-      
-    }
-  }
+  text-decoration: none;
 }
 
-.menuAppear{
-  animation-name: menuAppear;
-  animation-duration: 400ms;
-  animation-timing-function: ease-out;
+#menu li:hover ul{
+	height: 120px;
 }
 
-@keyframes menuAppear {
-  from{
-    opacity: 0;
-  }
-  to{
-    opacity:1;
-  }
-  
+nav {
+position : fixed ;
+background: black;
+color: white;
+width: 100%;
+height: 65px;
+top: 0px;
+left: 0px;
+display: flex;
+align-items: center;
+padding-left: 2%;
+justify-content: space-between;
+z-index: 100;
 }
+
+.no-margin {
+margin: unset;
+background: linear-gradient(to right, #FCB045 0%, #CF1512 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+/* The switch - the box around the slider */
+.switch {
+  left: -6%;
+  display: block;
+  --width-of-switch: 3.5em;
+  --height-of-switch: 2em;
+  /* size of sliding icon -- sun and moon */
+  --size-of-icon: 1.4em;
+  /* it is like a inline-padding of switch */
+  --slider-offset: 0.3em;
+  position: relative;
+  width: var(--width-of-switch);
+  height: var(--height-of-switch);
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #303136;
+  transition: .4s;
+  border-radius: 30px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: var(--size-of-icon,1.4em);
+  width: var(--size-of-icon,1.4em);
+  border-radius: 20px;
+  left: var(--slider-offset,0.3em);
+  top: 50%;
+  transform: translateY(-50%);
+  background: #303136;
+/* change the value of second inset in box-shadow to change the angle and direction of the moon  */
+box-shadow: inset -3px -2px 5px -2px #8983f7, inset -10px -4px 0 0 #a3dafb;
+ transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #303136;
+}
+
+input:checked + .slider:before {
+  left: calc(100% - (var(--size-of-icon,1.4em) + var(--slider-offset,0.3em)));
+  background: linear-gradient(40deg,#ff0080,#ff8c00 70%);
+  box-shadow: none;
+}
+
+
+
+
