@@ -64,7 +64,7 @@ const Project = ({ proj  }) => {
         <div className="card-back">
           <h2>Contexte :</h2>
           <p>{proj.contexte}</p>
-          <p>Voir le repos Git <a href={proj.repos}><FontAwesomeIcon icon={faCodeFork} fade style={{color: "#1e3050",}} /></a></p>
+          <p>Voir le repos Git <a href={proj.repos} aria-label="Lien du projet présenter"><FontAwesomeIcon icon={faCodeFork} fade style={{color: "#1e3050",}} /></a></p>
           <button className="button_flip" onClick={handleButtonClick}>
            <p>Read More</p><span aria-hidden="true">
         →
