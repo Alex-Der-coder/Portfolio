@@ -8,6 +8,7 @@ const WeatherTable = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
+
         const response = await axios.get('https://weather.com/fr-FR/temps/aujour/l/50.42,3.00?par=google');
         const parser = new DOMParser();
         const htmlDocument = parser.parseFromString(response.data, 'text/html');

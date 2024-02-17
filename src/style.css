@@ -1154,12 +1154,82 @@ footer li a {
   transform: translateX(4px);
 }
 
+@media screen and (min-width: 320px) and (min-height: 558px) {
+  #menu {
+    display: none;
+  }
+  .card_weather {
+    display: none;
+  }
+  #whoIAmSection {
+    padding-top: 0px;
+    width: 104%;
+    margin-left: -1%;
+  }
+  #projects {
+    margin-top: 60%;
+  }
+  .presentationContainer {
+    align-items: center;
+  }
+  .flip-card {
+    position: inherit;
+    margin-top: 18%;
+  }
+  .technoButtons {
+    margin-top: 10%;
+  }
+  .not_active {
+    margin-right: 4%;
+    margin-bottom: 5%;
+    width: 32%;
+  }
+  .active {
+    margin-right: 4%;
+    margin-bottom: 5%;
+    width: 32%;
+  }
+  .projectsSection .projectList .project {
+    width: 79%;
+  }
+  .projectsSection .projectList .project .projectTechno .technos {
+    display: none;
+  }
+  .projectsSection .projectList .project .projectTechno {
+    margin-top: -9%;
+  }
+  .projectsSection .projectList {
+    height: initial;
+  }
+  body {
+    overflow-x: hidden;
+  }
+  .container_link {
+    flex-direction: column-reverse;
+  }
+  footer {
+    margin-left: -3%;
+    margin-bottom: -3%;
+  }
+  hr {
+    display: none;
+  }
+  .pagination {
+    top: 1042.23px;
+    left: 40%;
+    width: 23%;
+  }
+  .pagination .active-pagination, .pagination li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
 body {
   font-family: "Raleway", sans-serif;
 }
 body .sectionTitle {
   font-size: 26px;
-  color: linear-gradient(90deg, #833ab4, #fd1d1d 50%, #fcb045);
 }
 body .sectionTitle h2 {
   font-weight: 400;
