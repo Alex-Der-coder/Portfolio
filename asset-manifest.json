@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/Alex-Der-coder/Portfolio/static/css/main.18c08fac.css",
-    "main.js": "/Alex-Der-coder/Portfolio/static/js/main.439dab69.js",
-    "static/media/computer.mp4": "/Alex-Der-coder/Portfolio/static/media/computer.08232d54eaf9f3ce3898.mp4",
-    "index.html": "/Alex-Der-coder/Portfolio/index.html",
-    "main.18c08fac.css.map": "/Alex-Der-coder/Portfolio/static/css/main.18c08fac.css.map",
-    "main.439dab69.js.map": "/Alex-Der-coder/Portfolio/static/js/main.439dab69.js.map"
+    "main.css": "/alex-der-coder.github.io/Portfolio/static/css/main.18c08fac.css",
+    "main.js": "/alex-der-coder.github.io/Portfolio/static/js/main.7d3b57ba.js",
+    "static/media/computer.mp4": "/alex-der-coder.github.io/Portfolio/static/media/computer.08232d54eaf9f3ce3898.mp4",
+    "index.html": "/alex-der-coder.github.io/Portfolio/index.html",
+    "main.18c08fac.css.map": "/alex-der-coder.github.io/Portfolio/static/css/main.18c08fac.css.map",
+    "main.7d3b57ba.js.map": "/alex-der-coder.github.io/Portfolio/static/js/main.7d3b57ba.js.map"
   },
   "entrypoints": [
     "static/css/main.18c08fac.css",
-    "static/js/main.439dab69.js"
+    "static/js/main.7d3b57ba.js"
   ]
 }
