@@ -39,11 +39,7 @@
     "stream-http": "^3.2.0",
     "web-vitals": "^2.1.4"
   },
-
-  "homepage": " https://alex-der-coder.github.io/Portfolio/",
-
-
-
+"homepage": "",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
@@ -51,7 +47,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "sass": "sass --watch ./src/styles/index.scss:./src/style.css"
+    "sass": "sass --watch ./src/styles/index.scss:./src/style.css --style compressed"
   },
   "eslintConfig": {
     "extends": [
