@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/Alex-Der-coder/static/css/main.18c08fac.css",
-    "main.js": "/Alex-Der-coder/static/js/main.87558f2b.js",
-    "static/media/computer.mp4": "/Alex-Der-coder/static/media/computer.08232d54eaf9f3ce3898.mp4",
-    "index.html": "/Alex-Der-coder/index.html",
-    "main.18c08fac.css.map": "/Alex-Der-coder/static/css/main.18c08fac.css.map",
-    "main.87558f2b.js.map": "/Alex-Der-coder/static/js/main.87558f2b.js.map"
+    "main.css": "/static/css/main.18c08fac.css",
+    "main.js": "/static/js/main.b47e3a0e.js",
+    "static/media/computer.mp4": "/static/media/computer.08232d54eaf9f3ce3898.mp4",
+    "index.html": "/index.html",
+    "main.18c08fac.css.map": "/static/css/main.18c08fac.css.map",
+    "main.b47e3a0e.js.map": "/static/js/main.b47e3a0e.js.map"
   },
   "entrypoints": [
     "static/css/main.18c08fac.css",
-    "static/js/main.87558f2b.js"
+    "static/js/main.b47e3a0e.js"
   ]
 }
