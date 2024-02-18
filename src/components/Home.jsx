@@ -6,6 +6,7 @@ import Footer from "./Footer";
 import Navbar from "./Navbar";
 import { projectsList } from "../datas/projectsList";
 
+
 const Home = () => {
   return (
     <div>
