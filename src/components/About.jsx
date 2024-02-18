@@ -1,11 +1,16 @@
-// About.js
 import React from "react";
+import WhoIAm from "./WhoIAm";
+import Techno from "./Techno";
+import Footer from "./Footer";
+import Navbar from "./Navbar";
 
 const About = () => {
   return (
     <div>
-      <h1>About Me</h1>
-      {/* Add about page content here */}
+    <Navbar />
+    <WhoIAm />
+    <Techno />
+    <Footer />
     </div>
   );
 }

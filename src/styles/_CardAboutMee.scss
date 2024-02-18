@@ -72,15 +72,6 @@ color:white;
   position: absolute;
   margin-top: 3%;
   margin-left: 3%;
-
-  /*
-  &.is-flipped {
-    .flip-card-inner {
-      transform: rotateY(180deg);
-    }
-  }
-
-  */
   &:hover {
     transform: translateY(-10px);
   }

@@ -49,6 +49,7 @@ const Project = ({ proj  }) => {
               src={tech}
               className="technos"
               loading="lazy"
+              fetchpriority="low"
               alt={`Technologie used in this project: ${tech
                 .split('/')
                 .pop()
