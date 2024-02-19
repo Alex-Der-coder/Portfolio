@@ -28,7 +28,6 @@ const WeatherTable = () => {
         const humidityElement = htmlDocument.querySelector('[data-testid="wxData"].WeatherDetailsListItem--wxData--kK35q span[data-testid="PercentageValue"]');
         const humidityValue = humidityElement.textContent;
 
-        // Mise à jour du state avec les valeurs
         const data = [
           [locationText],
           [temperature],
@@ -38,14 +37,13 @@ const WeatherTable = () => {
         ];
 
         setWeatherData(data);
-        console.log(data);
       } catch (error) {
         console.error('Erreur lors de la récupération des données:', error);
       }
     };
 
     fetchData();
-  }, []); // La dépendance vide assure que cette requête n'est effectuée qu'une fois au montage
+  }, []);
 
   return (
     <div className="card_weather">

@@ -1,7 +1,7 @@
 import React from 'react';
+import newVideoURL from '../assets/computer.mp4'
 
 const VideoPlayer = () => {
-  const newVideoURL ="https://res.cloudinary.com/df1z0o9nt/video/upload/s--bcvfgE3P--/t_Portefolio_video/v1/Video/computer";
 
   return (
     <div className='Container_video'>

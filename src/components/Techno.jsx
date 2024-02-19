@@ -1,9 +1,22 @@
-import React, { useState, useRef,} from 'react';
+import React, { useState, useRef,useEffect} from 'react';
 import { projectsList } from "../datas/projectsList";
 import Project from './Projet';
 import ReactPaginate from 'react-paginate';
 
 const Techno= ({ projects }) => {
+
+  useEffect(() => {
+    const paginationElement = document.querySelector('.pagination[role="navigation"]');
+    
+    if (paginationElement) {
+      paginationElement.setAttribute('role', 'switch');
+      paginationElement.setAttribute('aria-label', 'change paginate');
+
+    }
+  }, []);
+
+ 
+
   const [selectedTechno, setSelectedTechno] = useState('');
   const sectionRef = useRef(null);
 
@@ -18,7 +31,6 @@ const Techno= ({ projects }) => {
   const endIndex = (currentPage + 1) * projectsPerPage;
   const currentProjects = projects.slice(startIndex, endIndex);
 
-  // Extract all technologies from the list of projects
   const allTechnologies = Array.from(
     new Set(
       projectsList.reduce((acc, project) => {
@@ -62,6 +74,8 @@ const Techno= ({ projects }) => {
             <Project key={proj.id} proj={proj} />
           ))}
 
+          
+
 <ReactPaginate
         previousLabel={'Précédent'}
         nextLabel={'Suivant'}
@@ -72,6 +86,7 @@ const Techno= ({ projects }) => {
         onPageChange={handlePageChange}
         containerClassName={'pagination'}
         activeClassName={'active-pagination'}
+        
       />
       </div>
      

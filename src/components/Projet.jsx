@@ -17,12 +17,14 @@ const Project = ({ proj  }) => {
     setIsFlipped(!isFlipped);
   };
 
+  console.log(proj );
+
   return (
 
     <div className={`project ${isFlipped ? 'project-active' : ''}`} key={proj.id}>
       <div className="card-inner">
         <div className="card-front">
-        <h2 className="projectTitle"> {proj.name} <FontAwesomeIcon  onClick={toggleQRCode} icon={faQrcode} className="fa-fade" />
+        <h2 data-testid="Titleprojet" className="projectTitle"> {proj.name} <FontAwesomeIcon  onClick={toggleQRCode} icon={faQrcode} className="fa-fade" />
           </h2>
           <a href={proj.link} className="projectGitLink">
             <div className="container_img">
@@ -37,6 +39,7 @@ const Project = ({ proj  }) => {
                   alt={`${proj.name} - ${proj.description}`}
                   className="kasa"
                   loading="lazy"
+                  fetchpriority="low"
                 />
               )}
             </div>
@@ -56,7 +59,7 @@ const Project = ({ proj  }) => {
                 .split('.')[0]}`}
             />
           ))}
-           <button className="button_flip" onClick={handleButtonClick}>
+           <button data-testid="readmore" className="button_flip" onClick={handleButtonClick}>
            <p>Read More</p><span aria-hidden="true">
         →
       </span></button>

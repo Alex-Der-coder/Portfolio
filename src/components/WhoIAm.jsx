@@ -12,7 +12,6 @@ const WhoIAm = () => {
       <VideoPlayer />
       <SpeedInsights/>
       <CardAboutMee />
-      <WeatherTable/>
       </div>
     </section>
   );
