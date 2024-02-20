@@ -13,12 +13,19 @@
       display: none;
       }
 
+      .projectList {
+        padding-bottom: 12%;
+        }
       #whoIAmSection {
         padding-top: 0px;
         width: 104%;
         margin-left: -1%;
         }
-
+        .pagination {
+          top: 228rem;
+          left: 77%;
+          width: 19%;
+        }
         #projects {
           margin-top: 60%;
           }
@@ -78,12 +85,6 @@
           }
             hr {
             display: none;
-          }
-
-          .pagination { 
-            top: 1042.23px;
-            left:40%;
-            width: 23%;
           }
 
           .pagination .active-pagination , .pagination li  {

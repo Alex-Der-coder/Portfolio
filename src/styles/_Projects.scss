@@ -151,30 +151,32 @@ list-style: none;
   display: flex;
   justify-content: space-between;
   width: 5%;
-  top: 157rem;
+  top: 158rem;
   position: absolute;
   left: 90%;
   padding-right: unset;
 }
 
 .pagination  .active-pagination {
-display: grid;
+display: flex;
   background-color: black;
-  align-content: center;
+ align-items: center;
   color: white;
   border-radius: 50%;
   height: 1.5rem;
   width: 1.5rem;
+  justify-content: center;
 }
 
 .pagination  li {
-  display: grid;
+  display: flex;
     background-color: white;
-    align-content: center;
+    align-items: center;
     color:black;
     border-radius: 50%;
     height: 1.5rem;
     width: 1.5rem;
+    justify-content: center;
   }
 
   .pagination .previous,

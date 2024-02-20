@@ -1,5 +1,5 @@
 import React from 'react';
-import newVideoURL from '../assets/computer.mp4'
+import newVideoURL from '../assets/computer.webm'
 
 const VideoPlayer = () => {
 
